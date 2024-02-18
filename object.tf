@@ -15,6 +15,14 @@ resource "aws_s3_object" "error" {
 	content_type = "text/html"
 }
 
+resource "aws_s3_object" "image" {
+	bucket = "c180471-ditiss-project"
+	key = "shinichi.jpeg"
+	source = "shinichi.jpeg"
+	acl = "private"
+	content_type = "image/jpeg"
+}
+
 resource "aws_s3_object" "style" {
 	bucket = "c180471-ditiss-project"
 	key = "style.css"
