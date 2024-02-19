@@ -18,7 +18,7 @@ resource "aws_s3_object" "error" {
 	server_side_encryption = "AES256"
 	
 }
-resource "aws_s3_object" "error" {
+resource "aws_s3_object" "dashboard" {
 	bucket = "c180471-ditiss-project2"
 	key = "dashboard.html"
 	source = "dashboard.html"
