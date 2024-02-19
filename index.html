@@ -1,17 +1,14 @@
-HTML CSS JSResult Skip Results Iframe
 <!DOCTYPE html>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
   <title> Login Page Form | Nothing4us</title>
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+ <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
-  <img class="bottom-left"  src="shinichi.jpeg" alt="shinichi">
-
 <!-- partial:index.partial.html -->
 <div class="center">
   <div class="ear ear--left"></div>
@@ -74,17 +71,17 @@ HTML CSS JSResult Skip Results Iframe
     </div>
   </div>
   <div class="login">
-    <label>
-      <div class="fa fa-phone"></div>
-      <input class="username" type="text" autocomplete="on" placeholder="Username"/>
-    </label>
-    <label>
-      <div class="fa fa-commenting"></div>
-      <input class="password" type="password" autocomplete="off" placeholder="Password"/>
-      <button class="password-button">Show</button>
-    </label>
-    <button class="login-button">Login</button>
-  </div>
+      <label>
+        <div class="fa fa-phone"></div>
+        <input class="username" type="text" autocomplete="on" placeholder="Username"/>
+      </label>
+      <label>
+        <div class="fa fa-commenting"></div>
+        <input class="password" type="password" autocomplete="off" placeholder="Password"/>
+        <button class="password-button" onclick="togglePassword()">Show</button>
+      </label>
+      <button class="login-button" onclick="login()">Login</button>
+    </div>
   <div class="social-buttons">
     <div class="social">
       <div class="fa fa-wechat"></div>
@@ -96,8 +93,29 @@ HTML CSS JSResult Skip Results Iframe
       <div class="fa fa-paw"></div>
     </div>
   </div>
+  
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js'></script><script  src="./script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js'></script>
+    <script src="./script.js"></script>
+    <script>
+      function togglePassword() {
+        // Implement logic to toggle password visibility (optional)
+      }
+
+      function login() {
+        // Implement login logic
+        // Example: Check username and password, then redirect to the dashboard if successful
+        var username = document.querySelector('.username').value;
+        var password = document.querySelector('.password').value;
+
+        // Example validation (replace with your actual validation logic)
+        if (username === 'myname' && password === 'name') {
+          window.location.href = 'dashboard.html';
+        } else {
+          alert('Invalid username or password. Please try again.');
+        }
+      }
+    </script>
 
 </body>
 </html>
