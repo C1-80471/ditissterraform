@@ -37,6 +37,15 @@ resource "aws_s3_object" "image" {
 	server_side_encryption = "AES256"
 
 }
+resource "aws_s3_object" "image" {
+	bucket = "c180471-ditiss-project2"
+	key = "ditiss.png"
+	source = "ditiss.png"
+	acl = "private"
+	content_type = "image/png"
+	server_side_encryption = "AES256"
+
+}
 
 resource "aws_s3_object" "style" {
 	bucket = "c180471-ditiss-project2"
