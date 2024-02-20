@@ -37,7 +37,7 @@ resource "aws_s3_object" "image" {
 	server_side_encryption = "AES256"
 
 }
-resource "aws_s3_object" "image" {
+resource "aws_s3_object" "pngas" {
 	bucket = "c180471-ditiss-project2"
 	key = "ditiss.png"
 	source = "ditiss.png"
